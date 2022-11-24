@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+            <li>Task 1</li>
+            <li class="checked">Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+            <li>Task 5</li>
+            <li>Task 6</li>
+        </ul>
+
+        <div class="task-buttons">
+            <button onclick="completeTasksDisplay()">COMPLETED TASKS</button>
+            <button onclick="pendingTasks()">PENDING TASKS</button>
+            <button onclick="allTasksDisplay()">ALL TASKS</button>
+        </div>
+
+        <div class="details">
+            <div class="task" id="allTasks"></div>
+            <div class="task" id="completedTask"></div>
+            <div class="task" id="pendingTasks"></div>  
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
